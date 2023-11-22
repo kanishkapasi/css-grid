@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.mainContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.mainContainer .container {
+  width: 95%;
+  height: 100%;
+  margin: auto;
+}
+
+/* Section One */
+
+.mainContainer .container .sectionOne {
+  width: 100%;
+  height: 40vh;
+  text-align: end;
+  background-image: url("./assets/room.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(0.6);
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.mainContainer .container .sectionOne h1 {
+  position: relative;
+  font-size: 70px;
+  top: 100px;
+  right: 200px;
+  color: black;
+  animation-name: headline;
+  animation-duration: 2s;
+  z-index: 5;
+  color: red;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+@keyframes headline {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .mainContainer .container .sectionOne h1 {
+    text-align: center;
+    top: 100px;
+    right: 0;
+  }
+}
+
+/*  End Of Section One */
+
+.mainContainer .container .sectionTwo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 1.5rem;
+  place-items: center;
+  margin-top: 20px;
+}
+
+.mainContainer .container .sectionTwo .items {
+  padding: 12px;
+  width: 220px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.4s;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.mainContainer .container .sectionTwo .items:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.mainContainer .container .sectionTwo .items:hover {
+  transform: scaleX(1.05) scaleY(1.05);
+}
+
+.mainContainer .container .sectionTwo .items h4 {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 17px;
+}
+
+.mainContainer .container .sectionTwo .items .buttonDetails {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+  position: relative;
+}
+
+.mainContainer .container .sectionTwo .items img {
+  width: 170px;
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.mainContainer .container .sectionTwo .items .btn {
+  width: 120px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: yellow;
+  border: 1px solid white;
+  border-radius: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  top: 5px;
+}
+
+.mainContainer .container .sectionTwo .items .btn .icon {
+  width: 10px;
+  height: 10px;
+}
+
+@media screen and (max-width: 1700px) {
+  .mainContainer .container .sectionTwo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 4rem;
+    place-items: center;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .mainContainer .container .sectionTwo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 4rem;
+    place-items: center;
+  }
+}
+
+@media screen and (max-width: 1095px) {
+  .mainContainer .container .sectionTwo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 4rem;
+    place-items: center;
+  }
+}
+
+@media screen and (max-width: 797px) {
+  .mainContainer .container .sectionTwo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4rem;
+    place-items: center;
+  }
+}
+
+@media screen and (max-width: 529px) {
+  .mainContainer .container .sectionTwo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    place-items: center;
+  }
+}
